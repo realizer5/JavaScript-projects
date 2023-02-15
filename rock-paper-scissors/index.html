@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="instructions">
+            <ol class="ins-ol">
+                <p>Instructions</p>
+                <li>You can start the game by selecting "Rock" &#128511,"Paper" &#128195 or "Scissors" &#9986</li>
+                <li>Rules are same as traditional Rock Paper Scissors, Rock &#128511 blunts/smashes Scissors &#9986,
+                    Paper &#128195 covers Rock &#128511, Scissors &#9986 cuts Paper &#128195</li>
+                <li>You can put your name simply by clickng on Player on scoreboard</li>
+                <li>You can keep count of score with scoreboard</li>
+            </ol>
+        </div>
+        <div class="icons">
+            <p class="icon-img" id="Rock">&#128511</p>
+            <p class="icon-img" id="Paper">&#128195</p>
+            <p class="icon-img" id="Scissors">&#9986</p>
+        </div>
+        <div class="info-container">
+            <h1 class="heading">Rock Paper Scissors</h1>
+            <p class="para">Score</p>
+            <div class="score-container">
+                <div class="score">
+                    <p id="playerScore">0</p>
+                    <p class="player-name" contenteditable>Player</p>
+                    <p id="playerChoice" hidden>Paper</p>
+                </div>
+                <div class="score">
+                    <p id="pcScore">0</p>
+                    <p class="player-name">PC</p>
+                    <p id="pcChoice" hidden>Rock</p>
+                </div>
+            </div>
+            <p id="result">Start Game</p>
+            <button id="reset">Reset</button>
+            <p id="count">Game count: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
