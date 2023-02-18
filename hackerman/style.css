@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/hackers');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 1fr;
+  font-family: 'Hackers', sans-serif;
+  color: #6ce847;
+}
+
+.container::after{
+  content: "";
+  position: absolute;
+  background: url(/v627-aew-01-technologybackground.jpg) no-repeat;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.side {
+  margin: 4rem;
+  padding: 10px;
+  border: 4px solid #1a1919;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  text-shadow: 0px 0px 10px lime;
+}
+
+.main{
+  margin: 4rem;
+  border: 4px solid #1a1919;
+  border-radius: 1rem;
+  text-shadow: 0px 0px 10px lime;
+  padding: 10px;
+}
+
+.input-area{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#targetName{
+  width: 90%;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid #6ce847;
+  border-radius: 10px;
+  background-color: transparent;
+  color: red;
+  outline: none;
+}
+
+#btn{
+  background-color: #3db31a;
+  border: 2px solid #1a1919;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: 900;
+}
+
+#btn:active{
+  background-color: #278a09;
+}
+
+@media only screen and (max-width : 900px) {
+  .container{
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .side{
+    display: none;
+  }
+  .main{
+    margin: 10px;
+    height: 35rem;
+  }
+  .main p {
+    margin-top: 1rem;
+  }
+}
