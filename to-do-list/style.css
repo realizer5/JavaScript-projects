@@ -1,0 +1,26 @@
+#taskForm {
+    width: 90%;
+    max-width: 30rem;
+    position: absolute;
+    top: 3.6rem;
+    right: 0;
+    padding: 1rem;
+}
+
+.form-control:focus~label,
+label {
+    color: #fff !important;
+}
+
+label::after {
+    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+    ;
+}
+
+@media screen and (max-width:576px){
+    #taskForm {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
