@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+            <label for="passLength">Password Length</label>
+            <input type="number" id="passLength" name="" value="6" min="6" max="20">
+            <label for="smallInc">Include Small Letters</label>
+            <input type="checkbox" id="smallInc" name="" value="" checked>
+            <label for="capInc">Include Capital Letters</label>
+            <input type="checkbox" id="capInc" name="" value="" checked>
+            <label for="numInc">Include Numbers</label>
+            <input type="checkbox" id="numInc" name="" value="" checked>
+            <label for="symInc">Include Symbols</label>
+            <input type="checkbox" id="symInc" name="" value="" checked>
+            <button id="genPassBtn">Genrate Password</button>
+        <div class="pass-container">
+            <span id="passSpan">Press Genrate Password</span>
+            <button id="copyBtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-copy">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                </svg></button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 1rem 2rem;
+    margin-inline: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    max-width: 30rem;
+    width: 30rem;
+    min-width: 15rem;
+    background-color: black;
+    box-shadow: 2px 2px 5px #222, -2px -2px 5px #222;
+}
+
+#genPassBtn {
+    grid-column: span 2;
+    padding: 0.5rem;
+}
+
+input[type=number] {
+    width: 3rem;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid white;
+    border-radius: 0.2rem;
+}
+
+input[type=checkbox] {
+    width: 3rem;
+    padding: 1rem;
+}
+
+.pass-container {
+    background-color: #232323;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    grid-column: span 2;
+    font-size: 1.5rem;
+}
+
+#copyBtn{
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0.5rem;
+    svg{
+        width: 1rem;
+        stroke: white;
+    }
+}
+
+button{
+    cursor: pointer;
+}
